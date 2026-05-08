@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroAI | Future of Automation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div id="scroll-progress"></div>
+
+    <div class="loader">
+        <div class="loader-content">NEURO AI</div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">NEURO<span>AI</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><button id="theme-toggle">🌓</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <canvas id="particles"></canvas>
+        <div class="container">
+            <h1 class="reveal">The Future is <span class="typing-text"></span></h1>
+            <p class="reveal">Automate your workflow with next-gen neural networks. Increase productivity by 400% with NeuroAI.</p>
+            <div class="hero-btns reveal">
+                <a href="#features" class="btn btn-primary">Get Started</a>
+                <a href="#" class="btn btn-outline">Watch Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title reveal">Intelligence in Every Layer</h2>
+            <div class="feature-grid">
+                <div class="feature-card reveal">
+                    <div class="icon">⚡</div>
+                    <h3>AI Automation</h3>
+                    <p>Automate repetitive tasks with 99.9% accuracy using our proprietary LLMs.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="icon">📊</div>
+                    <h3>Smart Analytics</h3>
+                    <p>Real-time data visualization that predicts market trends before they happen.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="icon">🤖</div>
+                    <h3>Chat Assistant</h3>
+                    <p>Context-aware AI that understands your business logic perfectly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dashboard" class="dashboard reveal">
+        <div class="container">
+            <div class="dashboard-window">
+                <div class="window-header">
+                    <div class="dots"><span></span><span></span><span></span></div>
+                    <div class="title">NeuroAI Dashboard</div>
+                </div>
+                <div class="window-body">
+                    <div class="sidebar-mock"></div>
+                    <div class="main-mock">
+                        <div class="card-mock"></div>
+                        <div class="card-mock"></div>
+                        <div class="chart-mock">
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar" style="height: 40%"></div>
+                            <div class="bar" style="height: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title reveal">Scalable Pricing</h2>
+            <div class="toggle-container">
+                <span>Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="price-toggle">
+                    <span class="slider round"></span>
+                </label>
+                <span>Yearly</span>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card reveal">
+                    <h3>Starter</h3>
+                    <div class="price">$<span class="amount" data-monthly="0" data-yearly="0">0</span></div>
+                    <ul>
+                        <li>500 AI Queries</li>
+                        <li>Basic Analytics</li>
+                        <li>Community Support</li>
+                    </ul>
+                    <button class="btn btn-outline">Join Free</button>
+                </div>
+                <div class="price-card featured reveal">
+                    <h3>Pro</h3>
+                    <div class="price">$<span class="amount" data-monthly="49" data-yearly="39">49</span></div>
+                    <ul>
+                        <li>Unlimited Queries</li>
+                        <li>Advanced Insights</li>
+                        <li>Priority API Access</li>
+                    </ul>
+                    <button class="btn btn-primary">Start Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="chat-widget">
+        <div class="chat-header">NeuroAI Assistant</div>
+        <div id="chat-body" class="chat-body"></div>
+        <div class="chat-input">
+            <input type="text" id="chat-input" placeholder="Ask anything...">
+            <button id="chat-send">Send</button>
+        </div>
+    </div>
+
+    <section id="faq" class="faq container">
+        <h2 class="section-title reveal">Common Questions</h2>
+        <div class="accordion">
+            <div class="accordion-item reveal">
+                <div class="accordion-header">Is my data secure? <span>+</span></div>
+                <div class="accordion-content">
+                    <p>Yes, we use enterprise-grade end-to-end encryption for all data processing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">NEURO<span>AI</span></div>
+                <p>&copy; 2026 NeuroAI Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
